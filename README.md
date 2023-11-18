@@ -122,7 +122,7 @@ for folder in os.listdir():
             if filename == "screenshot.png":
                 folderCount = folderCount + 1
                 sys.stdout.write('\r')
-                sys.stdout.write("[ %.2f%% : %d/284]" % ((folderCount/284)*100, folderCount))            
+                sys.stdout.write("[%.2f%% : %d/284]" % ((folderCount/284)*100, folderCount))            
                 result_vector = image_to_vector(os.path.join(folder,filename))
                 save_to_csv(result_vector, os.path.join(folder,"colors.csv"))
             
