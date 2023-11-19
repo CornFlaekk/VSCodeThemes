@@ -7,7 +7,33 @@
 
 ## Tabla de Contenidos
 
+- [Proceso de Adaptación](#proceso-de-adaptación)
+- [Script de Python Completo](#script-de-python-completo)
+- [Script de Python Explicado por Pasos](#script-de-python-explicado-por-pasos)
+  - [Librerías Necesarias](#librerías-necesarias)
+  - [Clonar Repositorio de GitHub](#clonar-repositorio-de-github)
+  - [Recorrer las Carpetas de Temas](#recorrer-las-carpetas-de-temas)
+    - [Eliminar `.gitignore` y `.gitattribute`](#eliminar-gitignore-y-gitattribute)
+    - [Seleccionar Directorios con Temas](#seleccionar-directorios-con-temas)
+    - [Recorrer los Ficheros de las Carpetas](#recorrer-los-ficheros-de-las-carpetas)
+      - [Renombrar Imágenes](#renombrar-imágenes)
+      - [Borrar Ficheros Innecesarios](#borrar-ficheros-innecesarios)
+      - [Guardar Colores de una Imagen](#guardar-colores-de-una-imagen)
+      - [Obtener Enlace al Marketplace](#obtener-enlace-al-marketplace)
+    - [Eliminar SubCarpetas](#eliminar-subcarpetas)
+  - [Eliminar la Carpeta Zenburn](#eliminar-la-carpeta-zenburn)
+
 ## Proceso de Adaptación
+
+El proceso de adaptación ha consistido en:
+
+1. Eliminar ficheros innecesarios (`.gitignore`, `.gitattributes`)
+2. Renombrar las carpetas a un formato más legible
+3. Renombrar las imágenes para obtener un formato común
+4. Guardar colores principales de cada imagen
+5. Obtener el enlace al Marketplace de cada tema
+6. Eliminar ficheros innecesarios
+7. Eliminar tema *zenburn* (incompleto)
 
 ## Script de Python Completo
 
