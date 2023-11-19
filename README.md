@@ -149,9 +149,10 @@ for folder in os.listdir():
 # Zenburn theme is incomplete (no image + no marketplace link)
 shutil.rmtree("zenburn")
 ```
-
+---
 ## Script de Python Explicado por Pasos
 
+---
 ### Librerías Necesarias
 
 ```python
@@ -173,6 +174,7 @@ El primer paso es importar las librerías necesarias:
 - `colorthief` : extraer los colores principales de una imagen
 - `csv` : manejas ficheros .csv
 
+---
 ### Clonar Repositorio de GitHub
 
 ```python
@@ -188,6 +190,7 @@ os.chdir("VSCodeThemes")
 
 Si existe la carpeta *VSCodeThemes* de una ejecución anterior se elimina para empezar de cero. Posteriormente se clona el repositorio <https://github.com/gerane/VSCodeThemes>
 
+---
 ### Recorrer las Carpetas de Temas
 
 ```python
@@ -197,6 +200,7 @@ for folder in os.listdir():
 
 Iteraremos sobre todas las carpetas que hay en el respositorio, cada una conteniendo un tema. A mayores llevaremos un contador de cuantas hemos recorrido para notificar por terminal del progreso.
 
+---
 #### Eliminar `.gitignore` y `.gitattribute`
 
 ```python
@@ -208,6 +212,7 @@ Iteraremos sobre todas las carpetas que hay en el respositorio, cada una conteni
 
 En el repositorio hay un fichero `.gitignore` y un `.gitattribute`. Como no nos interesan cuando los encuentre los elimina. Cualquier otro fichero que esté se eliminará, porque los temas están en directorios.
 
+---
 #### Seleccionar Directorios con Temas
 
 ```python
@@ -228,6 +233,7 @@ Si el directorio se corresponde se renombra eliminando la parte *"gerane.Theme-"
 
 > Ejemplo : `gerane.Theme-Dracula/` se convierte en `Dracula/`
 
+---
 #### Recorrer los Ficheros de las Carpetas
 
 ```python
@@ -237,6 +243,7 @@ Si el directorio se corresponde se renombra eliminando la parte *"gerane.Theme-"
 
 Ahora que se modificaron los directorios los recorreremos buscando los ficheros que nos interesan. A mayores tendremos una variable `filepath` con la ruta al fichero actual.
 
+---
 ##### Renombrar Imágenes
 
 ```python
@@ -252,6 +259,7 @@ Dado que en el repositorio las capturas tienen 2 nombres posibles:
 
 Por conveniencia las nombraremos todas *screenshot.**png***.
 
+---
 ##### Borrar Ficheros Innecesarios
 
 ```python
@@ -261,6 +269,7 @@ Por conveniencia las nombraremos todas *screenshot.**png***.
 
 Dado que solo nos interesan las *capturas* y los *READMEs* eliminaremos el resto de ficheros.
 
+---
 ##### Guardar Colores de una Imagen
 
 ```python
@@ -310,6 +319,7 @@ R,G,B
 88,60,62
 ```
 
+---
 ##### Obtener Enlace al Marketplace
 
 ```python
@@ -346,6 +356,7 @@ Como el fichero contiene el enlace con una línea como la del ejemplo a continua
 
 > Ejemplo : \[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/gerane.Theme-DarkCF).
 
+---
 #### Eliminar SubCarpetas
 
 ```python
@@ -358,6 +369,7 @@ Como el fichero contiene el enlace con una línea como la del ejemplo a continua
 
 Dentro del directorio de cada tema hay carpetas que no nos interesan, por tanto cuando detecta que no son ficheros las eliminamos.
 
+---
 ### Eliminar la Carpeta Zenburn
 
 ```python
